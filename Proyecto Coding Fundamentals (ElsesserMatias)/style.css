@@ -2,18 +2,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #112B3C;
+    background-image: url(./Images/gradienta-QWutu2BRpOs-unsplash.jpg);
+    font-family: 'Mukta', sans-serif;
 }    
 
 .form , .registro{
-    width: 500px;
+    width: 400px;
     background-color: #205375;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 16px;
     color: #EFEFEF;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: 0 15px 15px rgb(0, 0, 0);
 }
 
@@ -21,7 +21,7 @@ body {
     font-size: 25px;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 2px 5px 15px #000;
+    text-shadow: 2px 5px 9px #132f41;
 }
 
 .form label , .registro label {
@@ -39,6 +39,7 @@ body {
     border-radius: 5px;
     color: #EFEFEF;
     font-size: 18px;
+    margin-bottom: 25px;
 }
 
 .form p , .registro p {
@@ -65,6 +66,7 @@ body {
     margin: 16px 0;
     font-size: 16px;
     border-radius: 5px;
+    font-family: 'Mukta', sans-serif;
 }
 
 .form__button:active , .registro__button:active {
