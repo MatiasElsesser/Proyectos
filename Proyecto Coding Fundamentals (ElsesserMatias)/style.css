@@ -14,7 +14,8 @@ body {
     margin-top: 100px;
     border-radius: 16px;
     color: #EFEFEF;
-    box-shadow: 0 15px 15px rgb(0, 0, 0);
+    box-shadow: 0 15px 25px rgb(0, 0, 0);
+    text-align: center;
 }
 
 .form__tittle , .registro__tittle {
@@ -27,6 +28,7 @@ body {
 .form label , .registro label {
     font-size: 25px;
     text-align: right;
+
 }
 
 .form__datos , .registro__datos {
@@ -40,6 +42,7 @@ body {
     color: #EFEFEF;
     font-size: 18px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .form p , .registro p {
@@ -59,21 +62,41 @@ body {
 
 .form__button , .registro__button {
     width: 100%;
-    background-color: #F66B0E;
-    border: none;
+    background-color: #205375;
+    border: 2px solid #F66B0E;
     padding: 12px;
     color: #EFEFEF;
     margin: 16px 0;
     font-size: 16px;
     border-radius: 5px;
     font-family: 'Mukta', sans-serif;
+    font-style: bold;
 }
 
+.form__button:hover , .registro__button:hover {
+    border-radius: 0;
+    border: 2px solid #EFEFEF;
+    transition: all .5s;
+}
+
+
 .form__button:active , .registro__button:active {
-    background-color: #e38c51;
+    border-radius: 0;
+    background-color: #EFEFEF;
+    color: #132f41;
+    transition: all .5s;
+    
 }
 
 .form__datos:focus , .registro__datos:focus {
     border-bottom: 2px solid #EFEFEF;
-    transition: .8s;
+    transition: .5s;
 }
+
+
+.form__usuario-container i, .form__password-container i {
+    position: absolute;
+    padding: 10px;
+    color: #F66B0E;
+}
+

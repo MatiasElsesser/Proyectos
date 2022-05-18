@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Images/iconoNaranja.png">
     <title> Iniciar sesión </title>
 </head>
 <body>
@@ -17,15 +18,30 @@
         <h1>Iniciar sesión</h1>
       </section>
       <section>
-        <label>Usuario</label>
-        <input class="form__datos" type="text" name="usuario">
-        <label>Contraseña</label>
-        <input class="form__datos" type="password" name="contraseña">
+
+        
+        <label for="usuario">Usuario</label>
+        <div class="form__usuario-container">
+          <i class="fa-solid fa-user"></i>
+          <input class="form__datos" type="text" name="usuario">
+        </div>
+        
+       
+        <label for="contraseña">Contraseña</label>
+        <div class="form__password-container">
+           <i class="fa-solid fa-lock"></i>
+           <input class="form__datos" type="password" name="contraseña">
+        </div>
+
       </section>
+
       <input class="form__button" type="button" value="Acceder">
       <p><a href="#">Olvide mi contraseña</a></p>
       <p>No tienes cuenta?<a href="./registrate.html">Registrate</a></p>
+
     </form>
+  
+    <script src="https://kit.fontawesome.com/bb0f11504d.js" crossorigin="anonymous"></script>
     
 </body>
 </html>
