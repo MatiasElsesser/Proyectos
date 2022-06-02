@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+   --Softblue: hsl(215, 51%, 70%);
+   --Cyan: hsl(178, 100%, 50%);
+
+
+   --main: hsl(217, 54%, 11%);
+   --card: hsl(216, 50%, 16%);
+   --line: hsl(215, 32%, 27%);
+   --White: hsl(0, 0%, 100%);
+
+   --Font: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 10px */
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    background-color: var(--main);
+    color: white;
+    gap: 20px;
+}
+
+.card {
+    width: 35%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--card);
+    border-radius: 12px;
+    padding: 30px;
+
+    font-family: var(--Font);
+    /*separacion entre letras*/
+    gap: 20px;
+}
+/* ">" selecciona al hijo directo del contenedor*/
+.card > img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.texto {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 20px;
+    font-size: small;
+}
+
+.texto h1 {
+    font-size: 2.5rem;
+}
+
+.texto p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--Softblue);
+}
+
+.info {
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.eth, .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    font-size: 1.8rem;
+}
+
+.eth {
+    color: var(--Cyan);
+}
+  
+.time {
+    color: var(--Softblue);
+}
+
+hr {
+    /*opacidad del elemento*/
+    opacity: 0.2;
+    width: 100%;
+  }
+  
+.creator {
+    width: 100%;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+}
+  
+.creator img {
+    width: 10%;
+    /*circulo al rededor de la img*/
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.creator p {
+    font-size: 2rem;
+}
+
+.creator span {
+    color: var(--Softblue);
+}
