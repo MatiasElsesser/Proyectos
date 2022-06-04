@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+--font: 'League Spartan', sans-serif;
+--VeryDarkMagenta: hsl(300, 43%, 22%);
+--SoftPink: hsl(333, 80%, 67%);
+
+
+--DarkGrayishMagenta: hsl(303, 10%, 53%);
+--LightGrayishMagenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 100px;
+
+
+    background-image: url(./images/bg-pattern-top-desktop.svg) , url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left , bottom right;
+    background-repeat: no-repeat;
+}
+
+.info {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+
+/*texto*/
+.texto {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.texto > h1 {
+    font-size: 5.5rem;
+    color: var(--VeryDarkMagenta);
+}
+
+.texto > p {
+    font-size: 1.8rem;
+    color: var(--DarkGrayishMagenta);
+}
+/*finalizacion texto*/
+
+
+/*INICIO RATING*/
+.rating {
+    width: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 20px;
+}
+
+.rating-items {
+    width: 500px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 5px;
+    background-color: var(--LightGrayishMagenta);
+}
+
+.rating-items p {
+    width: 250px;
+
+    font-size: 1.9rem;
+    text-align: left;
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+}
+
+.stars {
+    width: 150px;
+
+    text-align: center;
+}
+
+.rateitem-1 {
+    align-self: flex-start;
+}
+
+.rateitem-2 {
+    align-self: center;
+}
+
+.rateitem-3 {
+    align-self: flex-end;
+}
+
+/*FINAL RATING*/
+
+/* INICIO TESTIMONIALS */
+
+.testimonials {
+    width: 100%;
+    height: 320px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.card {
+    width: 25%;
+    padding: 40px;
+
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.user img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.user h4 {
+    margin-left: 20px;
+    color: var(--White);
+    font-size: 2rem;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+h4 > span {
+    color: var(--SoftPink);
+}
+
+.user p {
+    display: inline;
+    margin-top: 25px;
+
+    color: var(--White);
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.cardColton {
+    align-self: flex-start;
+}
+.cardIrene {
+    align-self: center;
+}
+.cardAnne {
+    align-self: flex-end;
+}
