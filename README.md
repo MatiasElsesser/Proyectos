@@ -1,3 +1,2 @@
-# hello-world
-Primer proyecto de inicio de sesión y registro
-Tzuzul code
+Bienvenidos a mi GitHub
+Estos son algunos de mis proyectos y practicas!
