@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background_aside: #212121;
+    --background_main: #181818;
+    --background_hover-btn: #383838;
+
+    --color-icons: #FFFFFF;
+}
