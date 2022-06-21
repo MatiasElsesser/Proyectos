@@ -11,3 +11,27 @@
 
     --color-icons: #FFFFFF;
 }
+
+body {
+    width: 100vw;
+
+    display: grid;
+
+    grid-template-areas: "aside header header header header"
+                         "aside header header header header"
+                         "aside main main main main"
+                         "aside main main main main"
+                         "aside main main main main"
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
