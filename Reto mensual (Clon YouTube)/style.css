@@ -12,6 +12,10 @@
     --color-icons: #FFFFFF;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     width: 100vw;
 
@@ -21,13 +25,102 @@ body {
                          "aside header header header header"
                          "aside main main main main"
                          "aside main main main main"
-                         "aside main main main main"
+                         "aside main main main main";
+    overflow-x: hidden;                     
 }
-
+/* comienzo barra lateral/aside */
 .aside {
     grid-area: aside;
-    
+    background-color: var(--background_aside);
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 2rem;
+    text-decoration: none;
+    list-style: none;
+
+    position: sticky;
+    top: -10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #FFFFFF;
 }
+
+.aside_logo {
+    width: 15%;
+    padding: 0 17px;
+    display: flex;
+
+    background-color: var(--background_aside);
+
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+}
+.aside_logo i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.aside_logo img {
+    width: 13rem;
+    cursor: pointer;
+}
+
+.aside_items, .aside_items2, .aside_subscripciones, .aside_mas, .aside_config, .aside_footer {
+    width: 100%;
+}
+
+.aside_items {
+    margin-top: 70px;
+}
+
+.aside a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+hr {
+    width: 80%;
+}
+.ul-items, .ul-items2, .ul-subscripciones, .ul-mas, .config-ul {
+    width: 100%;
+    margin: 0 16px;
+    
+    font-size: 2rem;
+    text-decoration: none;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ul-items li, .ul-items2 li, .ul-subscripciones li, .ul-mas li,.config-ul li {
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+}
+
+.ul-subscripciones img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+}
+.aside_footer {
+    padding: 0 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-p1, .footer-p2 {
+    font-size: 1.5rem;
+}
+/* final barra lateral/aside */
+
 
 .header {
     height: 150px;
