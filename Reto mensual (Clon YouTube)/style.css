@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -21,12 +23,14 @@ body {
 
     display: grid;
 
-    grid-template-areas: "aside header header header header"
-                         "aside header header header header"
-                         "aside main main main main"
-                         "aside main main main main"
-                         "aside main main main main";
-    overflow-x: hidden;                     
+    grid-template-areas: 
+    "aside header header header header"
+    "aside header header header header"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main";
+    overflow-x: hidden;
+    font-family: 'Red Hat Display', sans-serif;;
 }
 /* comienzo barra lateral/aside */
 .aside {
@@ -38,7 +42,7 @@ body {
     flex-direction: column;
     gap: 20px;
 
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
     list-style: none;
 
@@ -50,7 +54,7 @@ body {
 }
 
 .aside_logo {
-    width: 15%;
+    width: 13.7%;
     padding: 0 17px;
     display: flex;
 
@@ -69,6 +73,7 @@ body {
     cursor: pointer;
 }
 
+
 .aside_items, .aside_items2, .aside_subscripciones, .aside_mas, .aside_config, .aside_footer {
     width: 100%;
 }
@@ -83,11 +88,12 @@ body {
 }
 
 hr {
-    width: 80%;
+    width: 100%;
+    border-color: var(--background_hover-btn);
 }
 .ul-items, .ul-items2, .ul-subscripciones, .ul-mas, .config-ul {
     width: 100%;
-    margin: 0 16px;
+    margin: 0 25px;
     
     font-size: 2rem;
     text-decoration: none;
@@ -102,7 +108,9 @@ hr {
     display: flex;
 
     align-items: center;
-    gap: 15px;
+    gap: 25px;
+
+    font-size: 1.6rem;
 }
 
 .ul-subscripciones img {
@@ -119,18 +127,50 @@ hr {
 .footer-p1, .footer-p2 {
     font-size: 1.5rem;
 }
+
+.aside h3 {
+    font-size: 1.7rem;
+    color: var(--background_hover-btn);
+    font-weight: 600;
+}
+
+
 /* final barra lateral/aside */
 
 
+/* comienzo header */
 .header {
-    height: 150px;
+    height: 120px;
     grid-area: header;
+    background-color: var(--background_aside);
 }
 
 
 .header_superior {
     width: 100%;
     height: 50%;
+
+
+
+}
+.header_search {
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.header_search input {
+    width: 50%;
+    height: 35px;
+}
+
+.header_search button {
+    width: 35px;
+    height: 35px;
 }
 
 .header_inferior {
