@@ -115,6 +115,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 70px;
 }
 
+
 .aside a {
     color: #FFFFFF;
     text-decoration: none;
@@ -185,7 +186,7 @@ hr {
 
 .aside h3 {
     font-size: 1.7rem;
-    color: var(--background_hover-btn);
+    color: var(--background_hover-btn-claro);
     font-weight: 600;
 }
 
