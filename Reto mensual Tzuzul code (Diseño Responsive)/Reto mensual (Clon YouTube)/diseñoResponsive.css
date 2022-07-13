@@ -1,0 +1,161 @@
+
+body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+    "aside"
+    "header"
+    "main"
+    "main"
+    "main";
+
+    overflow-x: hidden;
+
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* header */
+.header {
+    width: 100vw;
+    height: 60px;
+    padding: 0;
+    background-color: var(--background_aside);
+
+}
+
+.header hr {
+    display: none;
+}
+
+.header_superior {
+    justify-content: flex-end;
+    background-color: var(--background_aside);
+
+    width: 100%;
+    height: 60px;
+    
+    position: fixed;
+    top: 0;
+}
+
+.header_profile {
+    display: none;
+}
+
+.header_inferior {
+    display: none;
+}
+/* final header */
+
+
+/* aside */
+.aside {
+    width: 100vw;
+    position: relative;
+    height: 0px;
+}
+
+
+.aside_logo {
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+.aside_items {
+    position: fixed;
+    top: 60px;
+    margin: 0;
+    
+}
+
+.aside_items .ul-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: .8rem;
+    gap: 2px;
+    background-color: var(--background_aside);
+}
+
+.aside_items .ul-items li {
+    width: 30rem;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 1.5rem;
+    gap: 10px;
+    justify-content: center;
+}
+
+.aside_items2,
+.aside_subscripciones,
+.aside_mas,
+.aside_config,
+.aside_footer {
+    display: none;
+}
+
+
+/* final aside */
+
+/* main */
+.main {
+    padding: 0;
+    padding-top: 80px;
+    width: 100vw;
+}
+
+.main_container {
+    width: 100vw;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(1,1fr);
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+
+    justify-content: center;
+    align-items: center; */
+
+    gap: 250px;
+}
+
+.main_container-marco {
+    width: 100%;
+}
+
+.main_container-marco iframe {
+    width: 100%;
+}
+
+iframe:hover {
+    transform: scale(1);
+}
+/* final main */
+
+@media (max-width: 450px) {
+    .header_buscador input[type="text"] {
+        width: 0px;
+        border: none;
+    }
+    .header_buscador {
+        justify-content: flex-end;
+        padding: 0 38px 0 0;
+    }
+    .search-btn {
+        border-radius: 50px;
+    }
+    .ul-items a {
+        display: none;
+        padding: 0 20px;
+    }
+    .ul-items li {
+        justify-content: center;
+        padding: 0 20px;
+    }
+}
