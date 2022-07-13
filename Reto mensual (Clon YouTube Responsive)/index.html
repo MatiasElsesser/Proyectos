@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+    <link rel="stylesheet" media="(max-width: 600px)" href="./diseñoResponsive.css">
+    <title> YouTube </title>
+</head>
+
+<body>
+    <!-- barra de busqueda y perfil  -->
+    <header class="header">
+
+        <div class="header_superior">
+
+            <div class="header_search">
+                <div class="header_buscador">
+                    <input type="text" placeholder="Buscar">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="search-voice"><i class="fa-solid fa-microphone"></i></button>
+                </div>
+                
+            </div>
+
+            <div class="header_profile">
+                <i class="fa-solid fa-arrow-up profile-icon"></i>
+                <i class="fa-solid fa-ellipsis profile-icon"></i>
+                <i class="fa-solid fa-bell profile-icon"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- secciones abajo de la barra de busqueda -->
+        <div class="header_inferior">
+            <button class="novedades_secciones"> Todo </button>
+            <button class="novedades_secciones"> Novedades para ti </button>
+            <button class="novedades_secciones"> En Directo </button>
+            <button class="novedades_secciones"> Musica </button>
+            <button class="novedades_secciones"> Videojuegos </button>
+            <button class="novedades_secciones"> Mixes </button>
+            <button class="novedades_secciones"> Noticias </button>
+            <button class="novedades_secciones"> Novedades </button>
+            <button class="novedades_secciones"> Informatica </button>
+            <button class="novedades_secciones"> Estrenos </button>
+            <button class="novedades_secciones"> Cine </button>
+        </div>
+
+    </header>
+    
+
+    <!-- para la barra lateral -->
+    <div class="aside_logo">
+        <button class="btn-aside-bar" id="btn-aside">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="./images/5305165_youtube_youtube logo_iconasdasd.png" alt="">
+    </div>
+    
+    <aside class="aside" id="aside">
+
+        <!-- continuacion barra lateral -->
+        <div class="aside_items">
+            <ul class="ul-items">
+                <li> <i class="fa-solid fa-house"></i> <a href="#"> Inicio </a> </li>
+                <li> <i class="fa-solid fa-compass"></i> <a href="#"> Explorar </a> </li>
+                <li> <i class="fa-brands fa-youtube-square"></i> <a href="#"> Shorts </a> </li>
+                <li> <i class="fa-solid fa-diagram-predecessor"></i> <a href="#">  Suscripciones </a> </li>
+
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="aside_items2">
+            <ul class="ul-items2">
+                <li> <i class="fa-solid fa-swatchbook"></i> <a href=""> Biblioteca </a> </li>
+                <li> <i class="fa-solid fa-clock-rotate-left"></i> <a href=""> Historial </a> </li>
+                <li> <i class="fa-solid fa-clapperboard"></i> <a href=""> Mis videos </a> </li>
+                <li> <i class="fa-solid fa-clock"></i> <a href=""> Ver más tarde </a> </li>
+                <li> <i class="fa-solid fa-thumbs-up"></i> <a href=""> Videos que me gustan </a> </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="aside_subscripciones">
+            <!-- <h3> Suscripciones </h3> -->
+            <ul class="ul-subscripciones">
+                <li> <h3>Subscripciones</h3></li>
+                <li> <img src="./images/WatchMojo.jpg" alt=""> WatchMojo Español </li>
+                <li> <img src="./images/FrancoEscamilla.jpg" alt=""> Franco Escamilla </li>
+                <li> <img src="./images/QuamtumFracture.jpg" alt=""> Quantum Fracture </li>
+                <li> <img src="./images/XpressTV.jpg" alt=""> XpressTV </li>
+                <li> <img src="./images/SoyDalto.jpg" alt=""> Soy Dalto </li>
+                <li> <img src="./images/Zone7.jpg" alt=""> Zone7 </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="aside_mas">
+            <ul class="ul-mas">
+                <li> <h3> Más de Youtube</h3> </li>
+                <li> <i class="fa-brands fa-youtube"></i> <a href="#"> Youtube Premium </a></li>
+                <li> <i class="fa-solid fa-film"></i> <a href="#">Peliculas </a></li>
+                <li> <i class="fa-solid fa-gamepad"></i> <a href="#">Videojuegos </a></li>
+                <li> <i class="fa-brands fa-nfc-directional"></i> <a href="#">Directo </a></li>
+                <li> <i class="fa-solid fa-person-chalkboard"></i> <a href="#">Aprendizaje </a></li>
+                <li> <i class="fa-solid fa-trophy"></i> <a href="#">Deportes </a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="aside_config">
+            <ul class="config-ul">
+                <li> <i class="fa-solid fa-gear"></i> <a href="#"> Confirguracion </a></li>
+                <li> <i class="fa-solid fa-flag"></i> <a href="#"> Historial de denuncias </a></li>
+                <li> <i class="fa-solid fa-circle-info"></i> <a href="#"> Ayuda </a></li>
+                <li> <i class="fa-solid fa-comment"></i> <a href="#"> Enviar Sugerencias </a></li>
+            </ul>
+        </div>
+    
+
+    <hr>
+    
+        <!-- este es el footer del aside -->
+        <footer class="aside_footer">
+
+            <p class="footer-p1">
+                <a href=""> Informacion </a> <a href=""> Prensa </a> <br>
+                <a href=""> Derechos de autor </a> <a href=""> Contactar </a> <br>
+                <a href=""> Creadores </a> <a href=""> Publicidad </a> <br>
+                <a href=""> Desarrolladores </a>
+            </p>
+
+            <p class="footer-p2">
+                <a href=""> Terminos </a> 
+                <a href=""> Privacidad </a> 
+                <br>
+                <a href=""> Politica y seguridad </a> 
+                <br>
+                <a href=""> Como funciona Youtube </a> 
+                <br>
+                <a href=""> Probar funciones nuevas </a>
+            </p>
+
+        </footer>
+    </aside>
+    <!-- Final del footer y el aside -->
+
+    <!-- inicio contenido o main -->
+    <main class="main">
+
+        <div class="main_container">
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/R1wwopVP7-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/FrancoEscamilla.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Payaso </h3>
+                        <p>Franco Escamilla <br>12 M de visualizaciones • hace 10 dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/ou5ti62V9sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/WatchMojo.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> ¡Top 10 peliculas de terror! </h3>
+                        <p>WatchMojo Español <br>1258 de visualizaciones • hace 18 minutos </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/jbFuH6hOo4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/XpressTV.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Lo mejor del internet [2021] </h3>
+                        <p>XpressTV <br>2.5 M de visualizaciones • hace 7 meses </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/Om3z8zvNKdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/bpc_gbTarpN2c2qSF70oA04KnYVHxB4NoCTcjK-pY-HJO0ZMMVX-SgSg_pY_1nLxGChZrMPa=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> FISHER - Ya Kidding </h3>
+                        <p> Blanc <br> 2.5 M de visualizaciones • hace 10 meses </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/vd5jgthqzW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLTsXk5nEOKKabk8BITs9DYeYR09vM0vORF7c37bEA=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Dua Lipa - Levitating (Tiny desk conciert) </h3>
+                        <p> NPR Music <br>42 M de visualizaciones • hace 2 años </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/v3NH6kG-O3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/_8PV4sNd9CNRjFBH0Jts2oIMAGwPhKXPTZr9Ngr8awu104-NZJbupzUhPm3cXTF1ALTOW5az=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Si tuviera que volver a empezar... Cómo lo haría? </h3>
+                        <p> deivchoi <br>485.264 visualizaciones • hace 10 dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/i5F0CsdgkGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLS_KIUCMmiPv9-lDauat0VaWLPUOJrcoy3KGW9uzrg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Leo DiCaprio ¿Es Realmente El Mejor Actor? </h3>
+                        <p> Te lo resumo <br>17 M de visualizaciones • hace 1 año</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/L9dUR42eEIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSRwIXz4PbuHpAtkFVJ5i3jJWyy4uuicz9MKOBATQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Curiosidades Doctor Strange in the Multiverse of Madness </h3>
+                        <p>The Top Comics <br>859.455 visualizaciones • hace 10 meses</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/GbLFQiix254" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/uGtPv6Mb5IpIwAalgGazdOgI03GFi_DUCTrNIQPsubkmhYoc7Jjn1SkXzW8qBgjY-TUwMcWu2w=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> San Martin, El cruce de Los Andes </h3>
+                        <p> Ffran Gomez <br>2.561 de visualizaciones•hace 15 dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/Z8UA30qFVak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/FrancoEscamilla.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Mosquitos, Slim Fit y "RAMÓN" </h3>
+                        <p>Franco Escamilla <br>12.586 visualizaciones • hace 18 dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/RVje3PPMo14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/XpressTV.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> 25 Cosas que no sabías en 5 minutos! ⏰ [127]   </h3>
+                        <p> XpressTV <br>37 M de visualizaciones • hace 10 dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/uCBVfhvJPbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/QuamtumFracture.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> ¿Hacia Dónde se Expande el Universo? El Cosmos y la Mente Humana </h3>
+                        <p> QuantumFracture <br>1.2 M de visualizaciones • hace 10 dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/mo6c9F3wMS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/QuamtumFracture.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Viajar en el Tiempo según la Física Teórica </h3>
+                        <p> QuantumFracture <br>28 M de visualizaciones • hace 4 años</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/RM0ql8360J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/NtFiDndm0Urf5zQbfuOmr-wKLd0b27W3KWOwd-3M8CGJMyhHnI60IsFlQMkjOiBToMyF-__5oYE=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Lionel Messi - Top 50 Goals In Career - With Commentary </h3>
+                        <p> Fad3nHD <br> 12.244 visualizaciones • hace 10 meses</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/UhI9oQzhA8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="./images/Zone7.jpg" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Zone7 - Moving Bricks (Original Mix) </h3>
+                        <p> Zone7 <br> 985 visualizaciones • hace 10 dias</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container-marco">
+                <iframe src="https://www.youtube.com/embed/Q04y2tvKCFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="marco-footer">
+                    <div class="marco-footer-img">
+                        <img src="https://yt3.ggpht.com/pM536caUr2zk5nufRN62y9RnpIEqxq__75B_utZ2YISrL_JSBCiJifMMA0D2UUxvdqljSeBZ8lQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="marco-footer-text">
+                    <h3> Resolviendo dudas frecuentes 😊 Bootcamp de programación gratuito </h3>
+                        <p> Tzuzul code <br> 3497 visualizaciones • hace 5 meses</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/bb0f11504d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
